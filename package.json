@@ -20,7 +20,7 @@
     "extends": "react-app"
   },
   "devDependencies": {
-    "gh-pages": "^1.1.0"
+    "gh-pages": "^1.2.0"
   },
   "browserslist": [
     ">0.2%",
@@ -29,3 +29,4 @@
     "not op_mini all"
   ]
 }
+
