@@ -11,23 +11,23 @@ import "./App.css";
 class App extends Component {
   state = {
     img,
-    clickedFish: [],
+    clickedImg: [],
     score: 0
   };
 
 //when you click on a card ... the img is taken out of the array
   imageClick = event => {
     const currentImg = event.target.alt;
-    const FishAlreadyClicked =
-      this.state.clickedFish.indexOf(currentImg) > -1;
+    const imgAlreadyClicked =
+      this.state.clickedImg.indexOf(currentImg) > -1;
 
 //if you click on img that has already been selected, the game is reset and cards reordered
-    if (FishAlreadyClicked) {
+    if (imgAlreadyClicked) {
       this.setState({
         img: this.state.img.sort(function(a, b) {
           return 0.5 - Math.random();
         }),
-        clickedFish: [],
+        clickedImg: [],
         score: 0
       });
         alert("You lose. Play again?");
@@ -39,7 +39,7 @@ class App extends Component {
           img: this.state.img.sort(function(a, b) {
             return 0.5 - Math.random();
           }),
-          clickedFish: this.state.clickedFish.concat(
+          clickedImg: this.state.clickedImg.concat(
             currentImg
           ),
           score: this.state.score + 1
@@ -52,7 +52,7 @@ class App extends Component {
               img: this.state.img.sort(function(a, b) {
                 return 0.5 - Math.random();
               }),
-              clickedFish: [],
+              clickedImg: [],
               score: 0
             });
           }

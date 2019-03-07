@@ -1,8 +1,9 @@
-.header{
+.header{ 
 	background-color: #ccc;
 	position: relative;
 	width: 100%;
 	/* z-index: -1; */
+
 }
 
 h1{

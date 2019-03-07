@@ -20,7 +20,7 @@
   box-shadow: 0 3px 6px #999, 0 3px 6px #999;
   /* position: fixed; */
   width: 100%;
-  
+  /* z-index: 99; */
   /* top: 0px; */
   
 }
